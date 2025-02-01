@@ -19,22 +19,27 @@
 using namespace std;
 using ll = long long;
 
-void Dfs() {
-
-}
-
 void Solve() {
-  int n, m;
-  cin >> n >> m;
-  vector<vector<int>> adjs(n);
+  int n, m, o;
+  cin >> n;
+  vector<int> p(n);
+  for (int& i : p) cin >> i;
+
+  ll sum_m = 0, sum_o = 0;
+  cin >> m;
   for (int i = 0; i < m; i++) {
-    int a, b;
-    cin >> a >> b;
-    adjs[a].push_back(b);
+    int s;
+    cin >> s;
+    sum_m += p[s - 1];
+  }
+  cin >> o;
+  for (int i = 0; i < o; i++) {
+    int l;
+    cin >> l;
+    sum_o += p[l - 1];
   }
 
-  set<int> in_cycle;
-
+  cout << sum_m << ' ' << sum_o << ' ' << (sum_m + sum_o) << endl;
 }
 
 int main() {

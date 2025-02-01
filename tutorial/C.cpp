@@ -9,41 +9,29 @@
 #include <numeric>
 #include <queue>
 #include <set>
-#include <sstream>
 #include <stack>
 #include <string>
 #include <tuple>
 #include <unordered_set>
 #include <vector>
 
+#define C(i) "Case #" << (i + 1) << ":\n"
+
 using namespace std;
 using ll = long long;
-
-void Dfs() {
-
-}
-
-void Solve() {
-  int n, m;
-  cin >> n >> m;
-  vector<vector<int>> adjs(n);
-  for (int i = 0; i < m; i++) {
-    int a, b;
-    cin >> a >> b;
-    adjs[a].push_back(b);
-  }
-
-  set<int> in_cycle;
-
-}
 
 int main() {
   int t;
   cin >> t;
-  cin.ignore();
-  for (int i = 1; i <= t; i++) {
-    cout << "Case #" << i << ":" << endl;
-    Solve();
+  for (int i = 0; i < t; i++) {
+    int n;
+    cin >> n;
+    ll a, s = 0;
+    for (int j = 0; j < n; j++) {
+      cin >> a;
+      s += a;
+    }
+    cout << C(i) << s << endl;
   }
 
   return 0;

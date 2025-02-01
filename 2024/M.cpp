@@ -16,25 +16,26 @@
 #include <unordered_set>
 #include <vector>
 
+#define M (998244353ll)
+
 using namespace std;
 using ll = long long;
 
-void Dfs() {
-
+ll tn(ll n) {
+  return (n * (n + 1) / 2) % M;
 }
 
 void Solve() {
-  int n, m;
-  cin >> n >> m;
-  vector<vector<int>> adjs(n);
-  for (int i = 0; i < m; i++) {
-    int a, b;
-    cin >> a >> b;
-    adjs[a].push_back(b);
+  ll n;
+  cin >> n;
+
+  ll s = 0;
+  for (int j = 2; j < n; j++) {
+    s += (j * tn(j - 1)) % M;
   }
+  s = (s - tn(n - 2) + M) % M;
 
-  set<int> in_cycle;
-
+  cout << s << endl;
 }
 
 int main() {
@@ -48,3 +49,16 @@ int main() {
 
   return 0;
 }
+/*
+
+n=5
+
+  j 1 2 3 4 5
+i   - - - - -
+1 | . f f f .
+2 | . . f f .
+3 | . . . f .
+4 | . . . . .
+5 | . . . . .
+
+*/

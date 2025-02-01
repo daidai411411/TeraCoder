@@ -19,22 +19,11 @@
 using namespace std;
 using ll = long long;
 
-void Dfs() {
-
-}
-
 void Solve() {
-  int n, m;
-  cin >> n >> m;
-  vector<vector<int>> adjs(n);
-  for (int i = 0; i < m; i++) {
-    int a, b;
-    cin >> a >> b;
-    adjs[a].push_back(b);
-  }
-
-  set<int> in_cycle;
-
+  ll n;
+  cin >> n;
+  ll s = n * (n + 1) / 2;
+  cout << s << endl;
 }
 
 int main() {

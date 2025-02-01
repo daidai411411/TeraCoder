@@ -19,28 +19,25 @@
 using namespace std;
 using ll = long long;
 
-void Dfs() {
-
-}
-
 void Solve() {
-  int n, m;
-  cin >> n >> m;
-  vector<vector<int>> adjs(n);
-  for (int i = 0; i < m; i++) {
-    int a, b;
-    cin >> a >> b;
-    adjs[a].push_back(b);
+  int n;
+  cin >> n;
+  string s;
+  cin >> s;
+
+  string teracoderstring = "TeraCod";
+  for (char c : s) {
+    if (teracoderstring.find(c) != string::npos) continue;
+    cout << "No" << endl;
+    return;
   }
-
-  set<int> in_cycle;
-
+  cout << "Yes" << endl;
 }
 
 int main() {
   int t;
   cin >> t;
-  cin.ignore();
+  // cin.ignore();
   for (int i = 1; i <= t; i++) {
     cout << "Case #" << i << ":" << endl;
     Solve();

@@ -19,22 +19,12 @@
 using namespace std;
 using ll = long long;
 
-void Dfs() {
-
-}
-
 void Solve() {
-  int n, m;
-  cin >> n >> m;
-  vector<vector<int>> adjs(n);
-  for (int i = 0; i < m; i++) {
-    int a, b;
-    cin >> a >> b;
-    adjs[a].push_back(b);
-  }
-
-  set<int> in_cycle;
-
+  int n;
+  cin >> n;
+  if (2013 <= n and n <= 2022) cout << (n - 2012) << endl;
+  else if (n == 2024) cout << 11 << endl;
+  else cout << "No" << endl;
 }
 
 int main() {

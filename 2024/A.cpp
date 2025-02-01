@@ -19,22 +19,10 @@
 using namespace std;
 using ll = long long;
 
-void Dfs() {
-
-}
-
 void Solve() {
-  int n, m;
-  cin >> n >> m;
-  vector<vector<int>> adjs(n);
-  for (int i = 0; i < m; i++) {
-    int a, b;
-    cin >> a >> b;
-    adjs[a].push_back(b);
-  }
-
-  set<int> in_cycle;
-
+  int n;
+  cin >> n;
+  for (int i = 0; i < n; i++) cout << "TeraCoder" << endl;
 }
 
 int main() {

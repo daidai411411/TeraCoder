@@ -16,25 +16,22 @@
 #include <unordered_set>
 #include <vector>
 
+#define M (998244353ll)
+
 using namespace std;
 using ll = long long;
 
-void Dfs() {
-
+ll SumOfCubes(ll n) {
+  ll triangular_num = (n * (n + 1) / 2) % M;
+  return (triangular_num * triangular_num) % M;
 }
 
 void Solve() {
-  int n, m;
-  cin >> n >> m;
-  vector<vector<int>> adjs(n);
-  for (int i = 0; i < m; i++) {
-    int a, b;
-    cin >> a >> b;
-    adjs[a].push_back(b);
-  }
+  ll a, n;
+  cin >> a >> n;
 
-  set<int> in_cycle;
-
+  ll ans = (SumOfCubes(n) - SumOfCubes(a - 1) + M) % M;
+  cout << ans << endl;
 }
 
 int main() {
@@ -48,3 +45,10 @@ int main() {
 
   return 0;
 }
+
+/*
+
+
+t^2 % M = (Mq+r)^2 % M = r^2 % M
+
+*/

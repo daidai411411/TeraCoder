@@ -19,22 +19,19 @@
 using namespace std;
 using ll = long long;
 
-void Dfs() {
-
-}
-
 void Solve() {
-  int n, m;
-  cin >> n >> m;
-  vector<vector<int>> adjs(n);
-  for (int i = 0; i < m; i++) {
-    int a, b;
-    cin >> a >> b;
-    adjs[a].push_back(b);
+  ll n, m, k, d1, d2;
+  cin >> n >> m >> k >> d1 >> d2;
+
+  ll p1 = n, p2 = m;
+  while (p1 != p2) {
+    if (p1 < p2) p1 += d1;
+    else p2 += d2;
   }
-
-  set<int> in_cycle;
-
+  ll l = lcm(d1, d2);
+  ll p1_destroy = p1 + l * (k - 1);
+  ll ans = (p1_destroy - n) / d1 + 1;
+  cout << ans << endl;
 }
 
 int main() {

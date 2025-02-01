@@ -1,0 +1,108 @@
+Case #1:
+Yes
+Case #2:
+No
+Case #3:
+No
+Case #4:
+No
+Case #5:
+Yes
+Case #6:
+No
+Case #7:
+Yes
+Case #8:
+Yes
+Case #9:
+No
+Case #10:
+No
+Case #11:
+No
+Case #12:
+Yes
+Case #13:
+No
+Case #14:
+Yes
+Case #15:
+No
+Case #16:
+No
+Case #17:
+Yes
+Case #18:
+Yes
+Case #19:
+Yes
+Case #20:
+Yes
+Case #21:
+No
+Case #22:
+No
+Case #23:
+No
+Case #24:
+Yes
+Case #25:
+Yes
+Case #26:
+No
+Case #27:
+No
+Case #28:
+Yes
+Case #29:
+No
+Case #30:
+Yes
+Case #31:
+Yes
+Case #32:
+Yes
+Case #33:
+Yes
+Case #34:
+Yes
+Case #35:
+Yes
+Case #36:
+No
+Case #37:
+No
+Case #38:
+No
+Case #39:
+Yes
+Case #40:
+No
+Case #41:
+Yes
+Case #42:
+No
+Case #43:
+Yes
+Case #44:
+No
+Case #45:
+No
+Case #46:
+No
+Case #47:
+Yes
+Case #48:
+Yes
+Case #49:
+No
+Case #50:
+Yes
+Case #51:
+Yes
+Case #52:
+Yes
+Case #53:
+Yes
+Case #54:
+Yes
