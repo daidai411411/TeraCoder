@@ -33,7 +33,7 @@ void Dfs(unordered_set<int>& cycle, const vector<unordered_set<int>>& adjacents,
 	history.pop_back();
 }
 
-int main() {
+int Solve() {
 	int n, m;
 	cin >> n >> m;
 	vector<unordered_set<int>> adjacents(n);
@@ -49,6 +49,9 @@ int main() {
 
 	if (cycle.empty()) cout << "Happy" << endl;
 	else cout << cycle.size() << endl;
+}
 
+int main() {
+	Solve();
 	return 0;
 }

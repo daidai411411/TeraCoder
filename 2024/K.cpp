@@ -45,6 +45,5 @@ int main() {
     cout << "Case #" << i << ":" << endl;
     Solve();
   }
-
   return 0;
 }
